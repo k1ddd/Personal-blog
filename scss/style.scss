@@ -14,6 +14,15 @@ body {
   color: $white;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 // Blocks //
+@import "blocks/page";
+@import "blocks/header";
 @import "blocks/sidebar";
 @import "blocks/main";
+@import "blocks/container";

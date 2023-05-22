@@ -348,6 +348,26 @@ body {
   color: #fff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  overflow: hidden;
+}
+
+.header {
+  width: calc(100% - 300px);
+  height: 30px;
+  background-color: #0d0d0d;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 .sidebar {
   width: 300px;
   height: 100vh;
@@ -359,5 +379,13 @@ body {
 }
 
 .main {
+  padding-top: 10rem;
   padding-left: 300px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }/*# sourceMappingURL=style.css.map */
