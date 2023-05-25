@@ -14,7 +14,44 @@
 
 <body>
     <div class="page">
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="">Статті</a>
+                            <ul class="subnav">
+                                <li><a class="subnav__link" href="#">Створення сайтів</a>
+                                </li>
+                                <li><a class="subnav__link" href="#">Інтернет маркетинг</a></li>
+                                <li><a class="subnav__link" href="#">Просування відео</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="">Про мене</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Профіль</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="/" method="post">
+                    <input class="search__input" placeholder="пошук по блогу" type="text">
+                </form>
+            </div>
+        </header>
         <aside class="sidebar">
             <div class="sidebar__header">
                 <img src="./img/laptop.jpg" alt="laptop">
@@ -62,9 +99,24 @@
         <main class="main">
 
             <div class="container">
-                HELLO
-            </div>
+                <div class="stories">
+                    <div class="stories__item">
+                        <img class="stories__prev" src="./img/stories/stories-1.jpg" alt="stories-1">
+                        <div class="stories__title">Відпочиваю у парку Наталка</div>
+                        <time class="stories__date" datetime="2023-05-14">14.05.2023</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__prev" src="./img/stories/stories-2.jpg" alt="stories-2">
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__prev" src="./img/stories/stories-3.jpg" alt="stories-3">
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__prev" src="./img/stories/stories-4.jpg" alt="stories-4">
+                    </div>
 
+                </div>
+            </div>
         </main>
     </div>
 

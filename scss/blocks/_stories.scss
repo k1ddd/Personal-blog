@@ -1,0 +1,13 @@
+.stories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 13px;
+  grid-template-rows: 195px;
+}
+
+.stories__item {
+  overflow: hidden;
+  border-radius: 5px;
+
+  box-shadow: 0 5px 15px rgba($black, 0.2);
+}
