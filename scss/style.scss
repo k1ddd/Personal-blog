@@ -15,6 +15,10 @@ body {
   line-height: 1.5;
 }
 
+.flex {
+  display: flex;
+}
+
 *,
 *::before,
 *::after {
@@ -30,6 +34,7 @@ body {
 @import "blocks/sidebar";
 @import "blocks/main";
 @import "blocks/stories";
+@import "blocks/add-post";
 @import "blocks/container";
 @import "blocks/profile";
 @import "blocks/social";
