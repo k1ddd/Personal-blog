@@ -1,0 +1,142 @@
+.post {
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  padding: 2.5rem;
+  background-color: $primary;
+  box-shadow: 0 15px 25px rgba($black, 0.35%);
+  &__content {
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    color: #d2d2d2;
+  }
+  &__text {
+    font-size: 1.4rem;
+    color: $white;
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    h4 {
+      font-size: 1.2em;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+
+    ol,
+    ul {
+      margin-bottom: 2rem;
+    }
+    ol {
+      list-style-type: decimal;
+      list-style: inside;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__footer {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__data {
+    color: #828282;
+    line-height: 1.2;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__prev {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__header {
+    margin: 0 0 2rem;
+
+    &--prev {
+      margin: -2.5rem -2.5rem 0;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 500;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    &--mb0 {
+      margin-bottom: 0;
+    }
+  }
+  &__data-item {
+    &:not(:last-child):after {
+      content: "";
+      display: inline-block;
+      margin: 0 1.5rem;
+      position: relative;
+      top: -2px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #c4c4c4;
+    }
+  }
+  &__read {
+    justify-content: right;
+    text-decoration: none;
+    font-size: 1.45rem;
+    color: #107eff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__actions {
+    margin-bottom: 1.5rem;
+    display: flex;
+    font-size: 1.2rem;
+    color: $white;
+    justify-content: space-between;
+    a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+    &--icon {
+      margin-left: 0.5rem;
+    }
+  }
+}
