@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Пости</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="">Головна</a>
+                            <a class="nav__link" href="index.html">Головна</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link has-subnav" href="">Статті</a>
@@ -30,10 +30,10 @@
                                 <li><a class="subnav__link" href="#">Просування відео</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="nav__item">
                             <a class="nav__link" href="">Про мене</a>
                         </li>
-                        <li>
+                        <li class="nav__item">
                             <a class="nav__link" href="">Реклама</a>
                         </li>
                     </ul>
@@ -43,11 +43,11 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="">Профіль</a>
+                            <a class="nav__link" href="./profile.html">Профіль</a>
                         </li>
                     </ul>
                 </nav>
-                <form class="search" action="/" method="post">
+                <form class="search" action="search.html" method="get">
                     <input class="search__input" placeholder="пошук по блогу" type="text">
                 </form>
             </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="sidebar__footer">
-                <a class="btn btn--red" href="#">Мої роботи</a>
+                <a class="btn btn--red" href="works.html">Мої роботи</a>
                 <button class="btn btn--blue" type="button">Написати мені</button>
             </div>
         </aside>
@@ -101,7 +101,7 @@
             <div class="container">
                 <article class="post">
                     <div class="post__actions">
-                        <a href="#">повернутись назад</a>
+                        <a href="./index.html">повернутись назад</a>
                         <a href="#">поділитись
                             <img class="post__actions--icon" src="/img/share__icon.svg" alt="share__icon">
                         </a>
@@ -110,7 +110,7 @@
                         <h2 class="post__title post__title--mb0">Як писати код швидко і безболісно ?</h2>
                         <ul class="post__data flex">
                             <li class="post__data-item">
-                                <time datetime="2023-30-05">30.05.2023</time>
+                                <time datetime="2023-05-12">30.05.2023</time>
                             </li>
                             <li class="post__data-item">
                                 <a href="#">Створення сайтів</a>
@@ -119,9 +119,6 @@
                     </div>
                     <div class="post__content">
                         <div class="post__text">
-                            <h2>Заголовок 2</h2>
-                            <h3>Заголовок 3</h3>
-                            <h4>Заголовок 4</h4>
                             <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
                                 Правилами агентство, встретил если точках грустный меня назад послушавшись которой образ
                                 инициал пунктуация имеет вершину великий безорфографичный рукописи реторический знаках,
@@ -143,6 +140,91 @@
                                 nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
                             </p>
                         </div>
+                        <div class="related">
+                            <h3 class="post__subtitle">Цікаво почитати</h3>
+                            <ul class="related__list flex">
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title">
+                                        <a href="#">Планую купити телефон</a>
+                                    </h4>
+                                    <time class="related__list-date" datetime="2023-06-22 19:59">22.06.2023</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title">
+                                        <a href="#">Як писати код швидко і безболісно ?</a>
+                                    </h4>
+                                    <time class="related__list-date" datetime="2023-06-22 19:59">22.06.2023</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title">
+                                        <a href="#">Планую купити телефон</a>
+                                    </h4>
+                                    <time class="related__list-date" datetime="2023-06-22 19:59">22.06.2023</time>
+                                </li>
+                                <li class="related__list-item">
+                                    <h4 class="related__list-title">
+                                        <a href="#">Планую купити телефон</a>
+                                    </h4>
+                                    <time class="related__list-date" datetime="2023-06-22 19:59">22.06.2023</time>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3 class="post__subtitle">Обговорення</h3>
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <textarea class="form__control form__control--textarea" placeholder="Текст коментаря"
+                                    name="comment-text"></textarea>
+                                <span class="form__line"></span>
+                            </div>
+                            <button class="btn btn--sm btn--rounded btn--blue" type="submit">Відправити</button>
+                        </form>
+                        <ul class="comments">
+                            <li class="comments__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="https://placehold.it/30" alt="avatar">
+                                    <div class="comments__author">
+                                        <div class="comments__name">
+                                            Владислав Клокун
+                                        </div>
+                                        <time class="comments__pubdate" datetime="2023-07-14 19:11">1 тиждень
+                                            назад</time>
+                                    </div>
+
+                                </div>
+                                <div class="comments__text">
+                                    Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные
+                                    тексты. Эта повстречался собрал домах имени всеми снова ему то своего точках
+                                    пунктуация все за о вдали по всей продолжил, это грамматики.
+                                </div>
+                                <button class="comments__reply" type="button">Відповісти</button>
+                                <ul class="comments">
+                                    <li class="comments__item">
+                                        <div class="comments__header">
+                                            <img class="comments__avatar" src="https://placehold.it/30" alt="avatar">
+                                            <div class="comments__author">
+                                                <div class="comments__name">
+                                                    Владислав Клокун
+                                                </div>
+                                                <time class="comments__pubdate" datetime="2023-07-14 19:11">1 тиждень
+                                                    назад</time>
+                                            </div>
+
+                                        </div>
+                                        <div class="comments__text">
+                                            Далеко-далеко за словесными, горами в стране гласных и согласных живут
+                                            рыбные
+                                            тексты. Эта повстречался собрал домах имени всеми снова ему то своего точках
+                                            пунктуация все за о вдали по всей продолжил, это грамматики.
+                                        </div>
+                                        <button class="comments__reply" type="button">Відповісти</button>
+
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
 
                     </div>
                 </article>

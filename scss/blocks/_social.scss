@@ -3,4 +3,22 @@
   margin-top: 15px;
   gap: 15px;
   justify-content: center;
+
+
+   // MEDIA //
+    @include breakpoint($tablet-bp) {
+      display: none;
+    }
+
+  &__link {
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__link-share {
+    width: 45px !important;
+    height: 45px !important;
+  }
 }

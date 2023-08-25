@@ -9,17 +9,17 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Головна</title>
+    <title>Пошук</title>
 </head>
 
-<body class="show-sidebar">
+<body>
     <div class="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="">Головна</a>
+                            <a class="nav__link" href="index.html">Головна</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link has-subnav" href="">Статті</a>
@@ -38,9 +38,6 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger" type="button">
-                    <span></span>
-                </button>
             </div>
             <div class="header__right">
                 <nav class="nav">
@@ -61,32 +58,13 @@
             </div>
             <div class="sidebar__content">
                 <div class="profile">
-
-                    <img class="profile__avatar" src="./img/i__am.JPG" alt="">
-                    <div class="profile__header">
-                        <div class="profile__name">
-                            Владислав Клокун
-                        </div>
-                        <div class="profile__prof">
-                            блог front-end розробника
-                        </div>
-                    </div>
-                    <nav class="mobile-nav">
-                        <ul>
-                            <li>
-                                <a href="#">Головна</a>
-                            </li>
-                            <li>
-                                <a href="#">Статті</a>
-                            </li>
-                            <li>
-                                <a href="#">Про мене</a>
-                            </li>
-                            <li>
-                                <a href="#">Реклама</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <img class="profile__avatar" src="./img/i__am.JPG" alt="logo">
+                </div>
+                <div class="profile__name">
+                    Владислав Клокун
+                </div>
+                <div class="profile__prof">
+                    блог front-end розробника
                 </div>
                 <ul class="social">
                     <li class="social__item">
@@ -113,83 +91,16 @@
                 </div>
             </div>
             <div class="sidebar__footer">
-                <a class="btn btn--red" href="works.html">Мої роботи</a>
+                <a class="btn btn--red" href="#">Мої роботи</a>
                 <button class="btn btn--blue" type="button">Написати мені</button>
             </div>
         </aside>
 
-        <main class="main">
-
+        <div class="main">
             <div class="container">
-                <!-- Stories -->
-                <div class="stories">
-                    <div class="stories__item">
-                        <img class="stories__prev" src="./img/stories/stories-1.jpg" alt="stories-1">
-                        <div class="stories__title">Відпочиваю у парку Наталка з сім'єю</div>
-                        <time class="stories__date" datetime="2023-05-14">14.05.2023</time>
-                    </div>
-                    <div class="stories__item">
-                        <img class="stories__prev" src="./img/stories/stories-2.jpg" alt="stories-2">
-                        <div class="stories__title">Працюю над портфоліо</div>
-                        <time class="stories__date" datetime="2023-05-25">25.05.2023</time>
-                    </div>
-                    <div class="stories__item">
-                        <img class="stories__prev" src="./img/stories/stories-3.jpg" alt="stories-3">
-                        <div class="stories__title">В очікуванні переїзду на нову квартиру</div>
-                        <time class="stories__date" datetime="2023-05-22">22.05.2023</time>
-                    </div>
-                    <div class="stories__item">
-                        <img class="stories__prev" src="./img/stories/stories-4.jpg" alt="stories-4">
-                        <div class="stories__title">У процесі</div>
-
-                        <time class="stories__date" datetime="--.--.----">--.--.----</time>
-
-                    </div>
-
-                </div>
-                <!-- Add post -->
-                <div class="add-post">
-                    <form class="add-post__form" action="/" method="post">
-                        <textarea class="add-post__textarea" name="post-text"
-                            placeholder="напишіть що-небудь"></textarea>
-                        <div class="add-post__form-actions flex">
-                            <label class="add-post__file flex" for="add-post-file">
-                                <input type="file" id="add-post-file">
-                            </label>
-                            <button class="add-post__send" type="submit"><img src="./img/rectangle.svg"
-                                    alt="відправити"></button>
-                        </div>
-
-
-                    </form>
-                </div>
-                <!-- Article -->
-                <div class="post">
-                    <div class="post__content">
-                        <p class="post__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
-                            urna. Et vestibulum, posuere
-                            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
-                            sodales lacinia eu auctor
-                            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-                        </p>
-                    </div>
-                    <div class="post__footer">
-                        <ul class="post__data">
-                            <li class="post__data-item">
-                                <time datetime="2023-05-30">30.05.2023</time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <h1 class="page__title mb-30">Результат пошуку "Створити сайт"</h1>
                 <article class="post">
-                    <div class="post__header post__header--prev">
-                        <a href="post.html">
-                            <img class="post__prev" src="./img/post__photo.jpg"
-                                alt="Як писати код швидко і безболісно ?">
-                        </a>
 
-                    </div>
                     <div class="post__content">
                         <h2 class="post__title">
                             <a href="post.html">Як писати код швидко і безболісно ?</a>
@@ -211,21 +122,22 @@
                                 <a href="post.html">Створення сайтів</a>
                             </li>
                         </ul>
-                        <a class="post__read" href="post.html">читати</a>
+                        <a class="post__read" href="post.html">перейти</a>
                     </div>
                 </article>
                 <article class="post">
-                    <div class="post__header">
-                        <div class="embed">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Eo0IBAqWg4o"
-                                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
 
-                    </div>
                     <div class="post__content">
                         <h2 class="post__title">
-                            <a href="#">Планую купити телефон</a>
+                            <a href="post.html">Як писати код швидко і безболісно ?</a>
                         </h2>
+                        <p class="post__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+                            urna. Et vestibulum, posuere
+                            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+                            sodales lacinia eu auctor
+                            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                        </p>
                     </div>
                     <div class="post__footer flex">
                         <ul class="post__data flex">
@@ -233,38 +145,44 @@
                                 <time datetime="2023-05-30">30.05.2023</time>
                             </li>
                             <li class="post__data-item">
-                                <a href="#">Різне</a>
+                                <a href="post.html">Створення сайтів</a>
                             </li>
                         </ul>
-                        <a class="post__read" href="#">залишити коментар</a>
+                        <a class="post__read" href="post.html">перейти</a>
                     </div>
                 </article>
+                <article class="post">
 
-                <!-- Pagination -->
-                <ul class="pagination flex">
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#"> &lt;</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">1</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link active" href="#">2</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">3</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#"> &gt;</a>
-                    </li>
-                </ul>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="post.html">Як писати код швидко і безболісно ?</a>
+                        </h2>
+                        <p class="post__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis
+                            urna. Et vestibulum, posuere
+                            tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+                            sodales lacinia eu auctor
+                            nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                        </p>
+                    </div>
+                    <div class="post__footer flex">
+                        <ul class="post__data flex">
+                            <li class="post__data-item">
+                                <time datetime="2023-05-30">30.05.2023</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="post.html">Створення сайтів</a>
+                            </li>
+                        </ul>
+                        <a class="post__read" href="post.html">перейти</a>
+                    </div>
+                </article>
             </div>
-        </main>
+        </div>
+
+
+
     </div>
-
-
-    <!-- JS -->
-    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

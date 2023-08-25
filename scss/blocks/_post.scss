@@ -14,6 +14,8 @@
     color: #d2d2d2;
   }
   &__text {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1c1c1c;
     font-size: 1.4rem;
     color: $white;
     h2,
@@ -49,6 +51,14 @@
       max-width: 100%;
       height: auto;
     }
+  }
+
+  &__subtitle {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
   }
 
   &__footer {
