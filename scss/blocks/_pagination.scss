@@ -25,4 +25,9 @@
       box-shadow: 0 0 10px rgba($blue, 1);
     }
   }
+
+  // MEDIA //
+  @include breakpoint($tablet-bp) {
+    margin-top: 5rem;
+  }
 }

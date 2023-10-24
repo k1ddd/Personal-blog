@@ -62,4 +62,10 @@
     text-align: right;
     bottom: 0;
   }
+
+  // MEDIA //
+  @include breakpoint($mobile-bp) {
+    grid-template-columns: 140px 140px 140px 140px;
+    overflow: auto  ;
+  }
 }

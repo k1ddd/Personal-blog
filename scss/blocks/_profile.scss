@@ -4,6 +4,7 @@
   @include breakpoint($tablet-bp) {
     margin-top: -1rem;
     position: relative;
+    border-bottom: 1px solid #1c1c1c;
   }
 
   &__avatar {
@@ -66,9 +67,8 @@
     border-top: 1px solid #1c1c1c;
     border-bottom: 1px solid #1c1c1c;
 
-
-     // MEDIA //
-    @include breakpoint($tablet-bp)  {
+    // MEDIA //
+    @include breakpoint($tablet-bp) {
       display: none;
     }
   }

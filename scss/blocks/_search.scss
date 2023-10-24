@@ -17,4 +17,12 @@
   &::placeholder {
     color: rgba($white, 0.4);
   }
+
+  // MEDIA // 
+  @include breakpoint($tablet-bp)  {
+    height: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+  }
 }

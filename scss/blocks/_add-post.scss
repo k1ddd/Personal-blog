@@ -49,9 +49,19 @@
     }
   }
   &__form-actions {
-    width: 120px;
+    width: 12rem;
     flex-shrink: 0;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 1.5rem;
+
+    // MEDIA //
+    @include breakpoint($mobile-bp) {
+      width: 11.3rem;
+    }
+  }
+
+  // MEDIA //
+  @include breakpoint($mobile-bp) {
+    padding: 1.5rem;
   }
 }

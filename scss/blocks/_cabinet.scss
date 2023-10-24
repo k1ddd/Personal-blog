@@ -3,6 +3,11 @@
 
   &__form {
     width: 34rem;
+
+    // MEDIA //
+    @include breakpoint($mobile-bp) {
+      order: 2;
+    }
   }
 
   &__avatar {
@@ -12,6 +17,13 @@
     img {
       display: block;
       margin-bottom: 1.5rem;
+    }
+
+    // MEDIA //
+    @include breakpoint($mobile-bp) {
+      order: 1;
+      padding-left: 0;
+      margin-bottom: 2rem;
     }
   }
 
@@ -26,5 +38,10 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  // MEDIA //
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
   }
 }

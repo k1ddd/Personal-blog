@@ -1,11 +1,28 @@
 .nav {
+  &--mobile {
+    display: none;
+    margin-bottom: 5.5rem;
+  }
+  &--mobile .nav__link {
+    text-transform: none;
+  }
+  // MEDIA //
   @include breakpoint($tablet-bp) {
     display: none;
+    &--mobile {
+      display: block;
+    }
   }
 }
 
 .nav__list {
   display: flex;
+
+  // MEDIA //
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
 }
 
 .nav__item {
@@ -17,6 +34,18 @@
   }
   &:hover {
     background-color: $blue;
+  }
+
+  // MEDIA //
+  @include breakpoint($tablet-bp) {
+    &:hover {
+      background-color: transparent;
+    }
+    &:hover {
+      > .subnav {
+        padding-left: 4.7rem;
+      }
+    }
   }
 }
 
@@ -35,6 +64,7 @@
   &.has-subnav {
     position: relative;
     padding-right: 3.1rem;
+
     &:hover {
       text-decoration: none;
     }
@@ -48,5 +78,12 @@
       right: 1.35rem;
       transform: translateY(-50%);
     }
+  }
+
+  // MEDIA //
+  @include breakpoint($tablet-bp) {
+    padding-left: 2rem;
+    padding-right: 0;
+    font-size: 1.6rem;
   }
 }
