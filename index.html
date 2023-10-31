@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page" id="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -38,7 +38,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="sidebarToggle">
                     <span></span>
                 </button>
             </div>
@@ -55,7 +55,7 @@
                 </form>
             </div>
         </header>
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="./img/laptop.jpg" alt="laptop">
             </div>
@@ -97,6 +97,45 @@
                     </p>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="modal" id="contact-modal">
+                    <div class="modal__content modal__content--contact">
+                        <form class="form" action="/" method="post">
+                            <div class="form__group mb-30">
+                                <input class="form__control" type="text" placeholder="Ваше ім'я">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group mb-30">
+                                <input class="form__control" type="email" placeholder="Ваш e-mail">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group mb-30">
+                                <textarea class="form__control form__control--textarea"
+                                    placeholder="Текст повідомлення"></textarea>
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group mb-30">
+                                <div class="form__footer ">
+                                    <button type=" submit"
+                                        class=" btn btn--blue btn--rounded btn--sm">Відправити</button>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="modal__close" type="button">
+                            <img src="./img/cancel.svg" alt="cancel">
+                        </button>
+                        <ul class="modal__footer">
+                            <li>e-mail:
+                                <a href="mailto:vladyslav.klokun@gmail.com">vladyslav.klokun@gmail.com</a>
+                            </li>
+                            <li> tel:
+                                <a href="tel:+380937688908">+38 093-768-89-08</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <nav class="nav nav--mobile">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -128,6 +167,11 @@
 
             <div class="container">
                 <!-- Stories -->
+                <div class="modal" id="story-modal">
+                    <div class="modal__content modal__content--story">
+                        <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+                    </div>
+                </div>
                 <div class="stories" data-modal="story-modal">
                     <div class="stories__item">
                         <img class="stories__prev" src="./img/stories/stories-1.jpg" alt="stories-1">
@@ -156,8 +200,8 @@
                 <!-- Add post -->
                 <div class="add-post">
                     <form class="add-post__form" action="/" method="post">
-                        <textarea class="add-post__textarea" name="post-text"
-                            placeholder="напишіть що-небудь"></textarea>
+                        <textarea class="add-post__textarea" name="post-text" placeholder="напишіть що-небудь"
+                            data-autoresize></textarea>
                         <div class="add-post__form-actions flex">
                             <label class="add-post__file flex" for="add-post-file">
                                 <input type="file" id="add-post-file">
@@ -240,7 +284,7 @@
                             </li>
                             <li class="post__data-item">
                                 <a href="#">Різне</a>
-                            </li>
+                            </li>а
                         </ul>
                         <a class="post__read" href="#">залишити коментар</a>
                     </div>
@@ -271,6 +315,9 @@
 
     <!-- JS -->
     <script src="assets/modal.js"></script>
+    <script src="assets/mobileNav.js"></script>
+    <script src="assets/textarea.js"></script>
+
 </body>
 
 </html>

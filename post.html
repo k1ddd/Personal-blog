@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page " id="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -38,7 +38,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="sidebarToggle">
                     <span></span>
                 </button>
             </div>
@@ -55,7 +55,7 @@
                 </form>
             </div>
         </header>
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="./img/laptop.jpg" alt="laptop">
             </div>
@@ -177,7 +177,7 @@
                         <form class="form" action="/" method="post">
                             <div class="form__group">
                                 <textarea class="form__control form__control--textarea" placeholder="Текст коментаря"
-                                    name="comment-text"></textarea>
+                                    name="comment-text" data-autoresize></textarea>
                                 <span class="form__line"></span>
                             </div>
                             <button class="btn btn--sm btn--rounded btn--blue" type="submit">Відправити</button>
@@ -237,7 +237,9 @@
 
 
     <!-- JS -->
- 
+    <script src="/assets/modal.js"></script>
+    <script src="/assets/mobileNav.js"></script>
+    <script src="/assets/textarea.js"></script>
 </body>
 
 </html>

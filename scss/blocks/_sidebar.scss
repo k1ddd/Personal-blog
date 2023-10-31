@@ -12,6 +12,7 @@
 
   @include breakpoint($tablet-bp) {
     display: flex;
+    width: 85%;
     flex-direction: column;
     padding-bottom: 1.5rem;
     top: 4rem;
@@ -45,12 +46,12 @@
 
 .sidebar__content {
   padding: 0 2rem;
-
-
 }
 
 .sidebar__footer {
   display: flex;
   justify-content: center;
   gap: 2rem;
+
+
 }
