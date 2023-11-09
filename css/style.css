@@ -784,12 +784,12 @@ a:hover {
 }
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 26px;
+  height: 34px;
   border: none;
   resize: none;
   overflow: hidden;
@@ -944,8 +944,8 @@ a:hover {
   }
 }
 .social__link img {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 .social__link-share {
   width: 45px !important;
@@ -1320,7 +1320,7 @@ a:hover {
 }
 .form__control--textarea {
   resize: none;
-  height: 30px;
+  height: 32px;
   overflow: hidden;
 }
 .form__control:focus + .form__line {
